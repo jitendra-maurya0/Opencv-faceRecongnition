@@ -1,4 +1,4 @@
-package gab.opencv;
+package facedetect;
 
 
 import org.opencv.core.Core;
@@ -12,7 +12,7 @@ import org.opencv.objdetect.CascadeClassifier;
 
 public class Main {
 
-	public void main() {
+	public void test() {
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 		System.out.println("library loaded...");
 		 CascadeClassifier faceDetector = new CascadeClassifier("haarcascade_frontalface_alt.xml");
@@ -35,7 +35,7 @@ public class Main {
 	
 }
 	 public static void main(String[] args) {{
-		 new Main().main();
+		 new Main().test();
 	 }
 	 }
 
